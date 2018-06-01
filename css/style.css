@@ -1,0 +1,37 @@
+html {
+  background-color: #023d6e;
+  background-image: linear-gradient(to bottom right, #023d6e, rgb(7, 2, 58));
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.wallpaper {
+  background-image: url("../images/pool.jpg");
+}
+
+.job {
+  color: #2bbcff;
+}
+
+.hr {
+  background-image: linear-gradient(to right, #973bfb, #00d0f8);
+  background-image: linear-gradient(to right, #101ff5, #0fb3ff);
+}
+
+.button {
+  background-color: rgba(15, 119, 255, 0.1);
+  background-image: none;
+  border-image: linear-gradient(to right, #101ff5, #0fb3ff);
+  border-image-slice: 1;
+  border-radius: 0;
+  border-style: solid;
+  border-width: 1px;
+  color: #2bbcff;
+}
+
+.social a {
+  color: #44c3fd;
+}
+
+.social a:hover {
+  color: #fff;
+}
