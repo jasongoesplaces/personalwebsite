@@ -307,3 +307,32 @@ nav {
 .card-content {
   padding-top: 1% !important;
 }
+
+.divider {
+  background-color: #e2e2e210 !important;
+}
+
+@media screen and (min-width: 800px) {
+  .carousel .carousel-item {
+    margin-top: 20% !important;
+    width: 50% !important;
+    height: 180% !important;
+  }
+
+  .photoheader {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 799px) {
+  .carousel .carousel-item {
+    margin-top: 0% !important;
+    width: 75% !important;
+    height: 75% !important;
+  }
+
+  .photoheader {
+    margin-top: 30%;
+    text-align: center;
+  }
+}
