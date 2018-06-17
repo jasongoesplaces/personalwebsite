@@ -8,22 +8,42 @@
     <title>JasonGoesPlaces</title>
     <link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet">
     <link rel="stylesheet" href="css/minireset.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/animations.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <div id="wallpaper" class="wallpaper" data-image="images/pool.jpg"></div>
+    <ul id="dropdown1" class="dropdown-content">
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="portfolio.html">Web Dev Portfolio</a></li>
+      <li><a href="#!">Get In Touch</a></li>
+      <li><a href="https://github.com/jasongoesplaces" target="_blank"><i class="fab fa-github"></i>  GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/jasongoesplaces/" target="_blank"><i class="fab fa-linkedin"></i>  LinkedIn</a></li>
+      <li><a href="http://instagram.com/jasongoesplaces/" target="_blank"><i class="fab fa-instagram"></i>  Instagram</a></li>
+      <li><a href="https://www.youtube.com/channel/UChZcRZ6BQ3hrRgGTksQHzkA?view_as=subscriber" target="_blank"><i class="fab fa-youtube"></i>  Youtube</a></li>
+    </ul>
+    <nav>
+      <div class="nav-wrapper">
+          <a href="index.html">
+              <img class="logo" src="./images/logo.png" alt="JasonGoesPlaces">
+          </a>
+        <ul class="right dropmenu">
+          <li><a class="dropdown-trigger" href="#!" data-target="dropdown1"><i class="fas fa-bars"></i></a></li>
+        </ul>
+      </div>
+    </nav>
     <div class="content">
       <aside class="side">
         <figure id="picture" class="picture">
           <div class="picture-shadow"></div>
           <img id="pictureImage" class="picture-image"
-               src="images/jason.jpg"
-               srcset="images/jason.jpg 1x,
-                       images/jason@2x.jpg 2x,
-                       images/jason@3x.jpg 3x
-                       images/jason@4x.jpg 4x"
+               src="images/profile/jason.jpg"
+               srcset="images/profile/jason.jpg 1x,
+                       images/profile/jason@2x.jpg 2x,
+                       images/profile/jason@3x.jpg 3x
+                       images/profile/jason@4x.jpg 4x"
                alt="Photo of Jason Schultz"
                width="320"
                height="320">
@@ -43,18 +63,6 @@
             together to create captivating websites and apps.
           </p>
         </div>
-        <div class="contact">
-          <a class="button" href="portfolio.html">
-            Portfolio
-          </a>
-        </div>
-        <br>
-        <!-- <div class="contact">
-          <a class="button" href="portfolio.html">
-            Portfolio
-          </a>
-        </div>
-        <br> -->
         <div class="contact">
           <a class="button" href="mailto:jasongoesplaces@gmail.com">
             Get in touch
@@ -95,7 +103,12 @@
         }
       </style>
     </noscript>
-    <script defer type="text/javascript" src="js/main.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
+    <script defer type="text/javascript" src="js/main.js"></script>
   </body>
 </html>

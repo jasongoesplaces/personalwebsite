@@ -29,3 +29,5 @@ document.addEventListener('DOMContentLoaded', function() {
   loadImage('wallpaper');
   loadImage('pictureImage', 'picture');
 });
+
+$(".dropdown-trigger").dropdown();

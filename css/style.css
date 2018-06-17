@@ -63,3 +63,9 @@ html {
   justify-content: center;
   
 }
+
+.card-text {
+  font-weight: bolder;
+  font-size: 150%;
+  text-align: center;
+}
