@@ -246,6 +246,27 @@ html {
   .side {
     margin-bottom: 3rem;
     width: 100%;
+    padding-left: 0%;
+    margin-left: 0;
+    margin-right: 20%
+  }
+
+  #picture img {
+    padding-left: 0;
+  }
+
+  .dropdown-content {
+    width: 12% !important;
+    background-color: rgba(38, 69, 110, 0.952);
+  }
+  
+  .dropdown-content a {
+    color: #e2e2e2 !important;
+    font-weight: bolder !important;
+  }
+  
+  .dropdown-content a:hover {
+    color: #057db4 !important;
   }
 }
 
@@ -270,6 +291,20 @@ html {
     flex-grow: 1;
     flex-shrink: 1;
   }
+
+  .dropdown-content {
+    width: 12% !important;
+    background-color: rgba(92, 160, 250, 0.205);
+  }
+  
+  .dropdown-content a {
+    color: #e2e2e2 !important;
+    font-weight: bolder !important;
+  }
+  
+  .dropdown-content a:hover {
+    color: #057db4 !important;
+  }  
 }
 
 nav {
@@ -288,20 +323,6 @@ nav {
 .dropmenu {
   margin-left: 1.5%;
   margin-right: 1.5%;
-}
-
-.dropdown-content {
-  width: 12% !important;
-  background-color: rgba(92, 160, 250, 0.205);
-}
-
-.dropdown-content a {
-  color: #e2e2e2 !important;
-  font-weight: bolder !important;
-}
-
-.dropdown-content a:hover {
-  color: #057db4 !important;
 }
 
 .card-content {
@@ -335,4 +356,6 @@ nav {
     margin-top: 30%;
     text-align: center;
   }
+
+
 }
