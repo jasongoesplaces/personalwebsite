@@ -83,8 +83,6 @@
 .hr,
 .description,
 .contact,
-.contact2,
-.contact3,
 .social li {
   animation-duration: 1s;
   animation-timing-function: cubic-bezier(0, 0.5, 0, 1);
@@ -146,14 +144,6 @@
   animation-name: bounceIn;
 }
 
-.contact2 {
-  animation-name: bounceIn;
-}
-
-.contact3 {
-  animation-name: bounceIn;
-}
-
 .social li {
   animation-duration: 500ms;
   animation-name: slideUp;
@@ -188,14 +178,6 @@
 
 .contact {
   animation-delay: 600ms;
-}
-
-.contact2 {
-  animation-delay: 800ms;
-}
-
-.contact3 {
-  animation-delay: 800ms;
 }
 
 .social li:nth-child(1) {

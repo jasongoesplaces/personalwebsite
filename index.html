@@ -1,152 +1,470 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
+<head>
+    <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon"/ >
     <title>JasonGoesPlaces</title>
-    <link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet">
-    <link rel="stylesheet" href="css/minireset.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
-    <link rel="stylesheet" href="css/animations.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/main.css">
-  </head>
-  <body>
-    <div id="wallpaper" class="wallpaper" data-image="images/pool.jpg"></div>
-    <ul id="dropdown1" class="dropdown-content">
-      <li><a href="about.html"><i class="fas fa-user-circle"></i>  About Me</a></li>
-      <li class="divider"></li>
-      <li><a href="portfolio.html"><i class="fas fa-code"></i>  Portfolio</a></li>
-      <li class="divider"></li>
-      <li><a href="photography.html"><i class="fas fa-images"></i>  Photography</a></li>
-      <li class="divider"></li>
-      <li><a href="mailto:jasongoesplaces@gmail.com"><i class="fas fa-envelope"></i>  Get In Touch</a></li>
-      <li class="divider"></li>
-      <li><a href="https://github.com/jasongoesplaces" target="_blank"><i class="fab fa-github"></i>  GitHub</a></li>
-      <li class="divider"></li>
-      <li><a href="https://www.linkedin.com/in/jasongoesplaces/" target="_blank"><i class="fab fa-linkedin"></i>  LinkedIn</a></li>
-      <li class="divider"></li>
-      <li><a href="http://instagram.com/jasongoesplaces/" target="_blank"><i class="fab fa-instagram"></i>  Instagram</a></li>
-      <li class="divider"></li>
-      <li><a href="https://www.youtube.com/channel/UChZcRZ6BQ3hrRgGTksQHzkA" target="_blank"><i class="fab fa-youtube"></i>  Youtube</a></li>
-    </ul>
-    <nav>
-      <div class="nav-wrapper">
-          <a href="index.html">
-              <img class="logo" src="./images/logo.png" alt="JasonGoesPlaces">
-          </a>
-        <ul class="right dropmenu">
-          <li><a class="dropdown-trigger" href="#!" data-target="dropdown1"><i class="fas fa-bars"></i></a></li>
-        </ul>
-      </div>
-    </nav>
-    <!-- Modal Structure -->
-    <!-- <div id="modal1" class="modal">
-      <div class="modal-content">
-        <h4>Get In Touch</h4>
-        <form class="col s12" id="reused_form">
-          <div class="row">
-            <div class="input-field col s12">
-              <input id="name" type="text" name="name" required class="validate">
-              <label for="name">Name</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-field col s12">
-              <input id="email" type="email" name="reply_to" required class="validate">
-              <label for="email">Email</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-field col s12">
-              <textarea id="message" name="message" class="materialize-textarea" class="validate"></textarea>
-              <label for="message">Message</label>
-            </div>
-          </div>
-           <div>
-            <button class="waves-effect waves-light btn submitbtn" type="submit">Submit</button>
-          </div>
-        </form>
-        <p id="js-form-response"></p>
-      </div>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon"/>
+    <link href="https://fonts.googleapis.com/css?family=Rokkitt" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="css/animations.css"> -->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/reset.css"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css"/>
+</head>
+<body>
+  <!-- Header Section
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <header id="header">
+    <!-- Portfolio photo -->
+    <!-- <div class="content">
+        <aside class="side">
+            <figure id="picture" class="picture">
+            <div class="picture-shadow"></div>
+            <img id="pictureImage" class="picture-image"
+                    src="images/profile/jason.jpg"
+                    srcset="images/profile/jason.jpg 1x,
+                            images/profile/jason@2x.jpg 2x,
+                            images/profile/jason@3x.jpg 3x,
+                            images/profile/jason@4x.jpg 4x"
+                    alt="Jason Schultz"
+                    width="320"
+                    height="320">
+            </figure>
+        </aside>
     </div> -->
-    <div class="content">
-      <aside class="side">
-        <figure id="picture" class="picture">
-          <div class="picture-shadow"></div>
-          <img id="pictureImage" class="picture-image"
-               src="images/profile/jason.jpg"
-               srcset="images/profile/jason.jpg 1x,
-                       images/profile/jason@2x.jpg 2x,
-                       images/profile/jason@3x.jpg 3x
-                       images/profile/jason@4x.jpg 4x"
-               alt="Photo of Jason Schultz"
-               width="320"
-               height="320">
-        </figure>
-      </aside>
-      <main class="about">
-        <h1 class="name">
-          Jason Schultz
-        </h1>
-        <p class="job">
-          Web Developer // Content Creator
-        </p>
-        <hr class="hr">
-        <div class="description">
-          <p>
-            Fusing web development and media production 
-            to create captivating websites/apps.
-          </p>
+
+    <div class="main_nav">
+      <div class="container">
+        <div class="mobile-toggle"> <span></span> <span></span> <span></span> </div>
+        <nav>
+          <ul>
+            <!-- <li><a class="smoothscroll" href="#header"><img class="navLogo" src="./images/logo1.png"></a></li> -->
+            <li><a class="smoothscroll" href="#header">Home</a></li>
+            <li><a class="smoothscroll" href="#about">About Me</a></li>
+            <li><a class="smoothscroll" href="#portfolio">Portfolio</a></li>
+            <li><a class="smoothscroll" href="#photography">Photography</a></li>
+            <li><a class="smoothscroll" href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="title">
+      <div><img class="logo" src="./images/logo.png"></div>
+      <!-- <h1 class="heading"> Victoria M Gonzalez</h1> -->
+      <h2 class="heading">Web Developer • Content Creator</h2>
+      <a class="smoothscroll" href="#about">
+      <div class="mouse">
+        <div class="wheel"></div>
+      </div>
+      </a> </div>
+    <a class="smoothscroll" href="#about">
+    <div class="scroll-down"></div>
+    </a> 
+  </header> 
+
+  <!-- About Section
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->  
+    
+  <section id="about">
+    <div class="container">
+      <div class="row">
+        <h1>About Me</h1>
+        <div class="block"></div>
+      </div>
+        <div class="row">
+          <div class="six columns">
+            <p class="about"> 
+              My name is Jason Schultz and I'm a full-stack web developer and content creator. 
+              I gained experience in web development as part of the UCF Coding Bootcamp and am 
+              self taught in media production. I love enhancing my web development work with media 
+              production to create visually stunning websites and apps. 
+            </p>
+            <p class="about">
+              In my free time I enjoy watching sports, where you can find me rooting for Orlando 
+              City SC, the Tampa Bay Lightning, and the Green Bay Packers. I also enjoy homebrewing
+              beer, hiking, and traveling.               
+            </p>
+            <p class="about">
+              I have skills in a variety of areas. In web development I'm proficient in HTML, CSS, JavaScript,
+              Node.js, React.js, MySQL, and MongoDB. In media production, I'm experienced in using Final Cut Pro,
+              GarageBand, and Adobe Lightroom.
+            </p>
+          </div>
+          <div class="six columns aboutpic">
+            <img class="profilePic" src="./images/profile/jason2.jpg">
+          </div>
         </div>
-        <div class="contact">
-          <a class="button" href="mailto:jasongoesplaces@gmail.com">
-            Get in touch
+      </div>
+    </div>
+  </section>
+  
+  <!-- Team Section
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->  
+<!--   
+  <section id="team">
+    <div class="container">
+      <div class="row">
+        <h1>Meet the Team</h1>
+        <div class="block"></div>
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+      </div>
+      <div class="row">
+        <div class="three columns"> <img src="http://placehold.it/220x220" width="220" height="220" alt=""/>
+          <h4>Naruto Uzumaki</h4>
+          <p>Creative Director</p>
+          <span class="typcn typcn-social-facebook-circular icon"></span><span class="typcn typcn-social-instagram-circular icon"></span><span class="typcn typcn-social-google-plus-circular icon"></span><span class="typcn typcn-social-linkedin-circular icon"></span> </div>
+        <div class="three columns"> <img src="http://placehold.it/220x220" width="220" height="220" alt=""/>
+          <h4>Sasuke Uchiha</h4>
+          <p>Lead Designer</p>
+          <span class="typcn typcn-social-facebook-circular icon"></span><span class="typcn typcn-social-instagram-circular icon"></span><span class="typcn typcn-social-google-plus-circular icon"></span><span class="typcn typcn-social-linkedin-circular icon"></span> </div>
+        <div class="three columns"> <img src="http://placehold.it/220x220" width="220" height="220" alt=""/>
+          <h4>Shikamaru Nara</h4>
+          <p>Designer</p>
+          <span class="typcn typcn-social-facebook-circular icon"></span><span class="typcn typcn-social-instagram-circular icon"></span><span class="typcn typcn-social-google-plus-circular icon"></span><span class="typcn typcn-social-linkedin-circular icon"></span> </div>
+        <div class="three columns"> <img src="http://placehold.it/220x220" width="220" height="220" alt=""/>
+          <h4>Sakura Haruno</h4>
+          <p>Designer</p>
+          <span class="typcn typcn-social-facebook-circular icon"></span><span class="typcn typcn-social-instagram-circular icon"></span><span class="typcn typcn-social-google-plus-circular icon"></span><span class="typcn typcn-social-linkedin-circular icon"></span> </div>
+      </div>
+    </div>
+  </section> -->
+  
+  <!-- Skills Section
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->  
+<!--   
+  <section id="skills">
+    <div class="container">
+      <h1>Services</h1>
+      <div class="block"></div>
+      <div class="row">
+        <div class="one-third column">
+          <h3>Design</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, recusandae, at, labore velit eligendi amet nobis repellat natus.</p>
+        </div>
+        <div class="one-third column">
+          <h3>Development</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, recusandae, at, labore velit eligendi amet nobis repellat natus.</p>
+        </div>
+        <div class="one-third column">
+          <h3>Marketing</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, recusandae, at, labore velit eligendi amet nobis repellat natus.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="eight columns">
+          <div class="progressBar">
+            <h4>HTML5</h4>
+            <div class="progressBarContainer">
+              <div class="progressBarValue value-90"></div>
+            </div>
+          </div>
+          <div class="progressBar">
+            <h4>CSS3</h4>
+            <div class="progressBarContainer">
+              <div class="progressBarValue value-80"></div>
+            </div>
+          </div>
+          <div class="progressBar">
+            <h4>Jquery</h4>
+            <div class="progressBarContainer">
+              <div class="progressBarValue value-30"></div>
+            </div>
+          </div>
+          <div class="progressBar">
+            <h4>WordPress</h4>
+            <div class="progressBarContainer">
+              <div class="progressBarValue value-70"></div>
+            </div>
+          </div>
+        </div>
+        <div class="four columns">
+          <p>Lorem ipsum dolor sit amet, enim soluta consectetur adipisicing elit. Sit, eius, itaque, porro, beatae impedit officia tenetur reiciendis in quia eum autem. Enim soluta consectetur adipisicing elit.</p>
+        </div>
+      </div>
+    </div>
+  </section> -->
+  
+  <!-- Portfolio Section
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->  
+  
+  <section id="portfolio">
+    <div class="container">
+      <h1>Portfolio</h1>
+      <div class="block"></div>
+      <div class="row">
+          <h2>explore</h2>
+      </div>
+      <div class="row">
+        <div class="one-third column portfolioInfo">
+          <p>explore is a travel planning app for helping users find new unique 
+            experiences in their favorite destinations that are off the usual tourist path.
+          </p>
+          <p>The front end was created with React and Materialize CSS. The back end
+            was built with Node and Express. MongoDB was used as the database and Firebase was 
+            utilized for authentication.
+          </p>
+          <p>When checking out the site with the link below, feel free to create an account or
+            use the following sample account. Email:&nbsp;test@test.com&nbsp;|| Password: test123
+          </p>
+          <a href="https://the-explore-project.herokuapp.com" target="_blank">
+            <i class="fas fa-desktop"></i> Visit Site
+          </a>
+          <a href="https://github.com/jasongoesplaces/explore" target="_blank">
+            <i class="fab fa-github"></i> Github Repo
           </a>
         </div>
-        <ul class="social">
-          <li>
+        <div class="two-thirds column">
+          <img class="portfolioImg" src="./images/projects/explore.png"/>  
+        </div>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div class="row">
+          <h2>OleOle</h2>
+      </div>
+      <div class="row">
+        <div class="one-third column portfolioInfo">
+          <p class="about">OleOle is a sports statistics web app focused on Major League Soccer.
+            It allows users to find all of the most important information regarding their favorite 
+            team.
+          </p>
+          <p class="about">The front end was created with Bootstrap and Chart.JS. The back end
+            was built with Node and Express. MySQL and Sequelize was used as the database and Firebase was 
+            utilized for authentication.
+          </p>
+          <a href="https://oleole.herokuapp.com" target="_blank">
+            <i class="fas fa-desktop"></i> Visit Site
+          </a>
+          <a href="https://github.com/jasongoesplaces/oleole" target="_blank">
+            <i class="fab fa-github"></i> Github Repo
+          </a>
+        </div>
+        <div class="two-thirds column">
+          <img class="portfolioImg" src="./images/projects/oleole.png"/>  
+        </div>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div class="row">
+          <h2>OrlandoEats</h2>
+      </div>
+      <div class="row">
+        <div class="one-third column portfolioInfo">
+          <p class="about">Orlando Eats helps users find the best restaurants in Orlando. Users can 
+            either search for cuisine type or choose to browse one of the restaurant collections. 
+            Once a restaurant is chosen, the address and a map is provided along with reviews and 
+            pictures of the restaurant.
+          </p>
+          <p class="about">This entirely front end app is created with Materialize CSS. It utilizes 
+            the Zomato and Google Maps APIs to provide the restaurant information to the user.
+          </p>
+          <a href="https://jasongoesplaces.github.io/OrlandoEats/" target="_blank">
+            <i class="fas fa-desktop"></i> Visit Site
+          </a>
+          <a href="https://github.com/jasongoesplaces/OrlandoEats" target="_blank">
+            <i class="fab fa-github"></i> Github Repo
+          </a>
+        </div>
+        <div class="two-thirds column">
+          <img class="portfolioImg" src="./images/projects/orlandoeats.png"/>  
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- <section id="portfolio">
+        <div class="container">
+          <h1>Work</h1>
+          <div class="block"></div>
+          <div class="row">
+            <div class="three columns"> <img src="http://placehold.it/220x220" class="image" alt="Work One"/>            
+                <a href="https://victoriagoesplaces.github.io/WordGuessGame/" target="_blank"> </div>
+            <div class="three columns"> <img src="http://placehold.it/220x220" class="image" alt="Work Two"/>
+                <a href="https://victoriagoesplaces.github.io/unit-4-game/" target="_blank">            
+            </div>
+            <div class="three columns"> <img src="http://placehold.it/220x220" class="image" alt="Work Three"/>
+                <a href="https://victoriagoesplaces.github.io/TriviaGame/" target="_blank">          
+            </div>
+            <div class="three columns"> <img src="http://placehold.it/220x220" class="image" alt="Work Four"/></div>
+          </div>
+    
+          <div class="row" style="margin-top: 30px;">
+            <div class="three columns"> <img src="http://placehold.it/220x220" class="image" alt="Work Five"/>
+                <a href="https://victoriagoesplaces.github.io/GIPHY_APP/" target="_blank">  
+            </div>
+            <div class="three columns"> <img src="http://placehold.it/220x220" class="image" alt="Work Six"/>
+                <a href="https://victoriagoesplaces.github.io/TrainScheduler/" target="_blank">       
+            </div>
+            <div class="three columns"> <img src="http://placehold.it/220x220" class="image" alt="Work Seven"/>
+                <a href=" https://victoriagoesplaces.github.io/ProjectOne/" target="_blank">             
+            </div>
+            <div class="three columns"> <img src="http://placehold.it/220x220" class="image" alt="Work Eight"/>
+                <a href="##" target="_blank">       
+            </div>
+          </div>
+        </div>
+      </section> -->
+  
+  <!-- Testimonials Section
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->  
+  
+  <section id="photography">
+    <div class="container">
+      <h1>Photography</h1>
+      <div class="block"></div>
+      <div class="row">
+        <div class="three columns"><a href="#modal1"><img src="./images/photography/vik1.jpg" class="image" alt="Vik"/></a></div>
+        <div class="three columns"><a href="#modal2"><img src="./images/photography/engagmentFountain1.jpg" class="image" alt="Engagement Fountain"/></a></div>
+        <div class="three columns"><a href="#modal3"><img src="./images/photography/plane1.jpg" class="image" alt="Plane Wreck"/></a></div>
+        <div class="three columns"><a href="#modal4"><img src="./images/photography/engagmentTampa1.jpg" class="image" alt="Engagement Tampa"/></a></div>
+      </div>
+      <div class="row" style="margin-top: 30px;">
+        <div class="three columns"><a href="#modal5"><img src="./images/photography/newyork1.jpg" class="image" alt="New York"/></a></div>
+        <div class="three columns"><a href="#modal6"><img src="./images/photography/engagementBolts1.jpg" class="image" alt="Engagement Bolts"/></a></div>
+        <div class="three columns"><a href="#modal7"><img src="./images/photography/frontGate1.jpg" class="image" alt="Front Gate"/></a></div>
+        <div class="three columns"><a href="#modal8"><img src="./images/photography/parthenon1.jpg" class="image" alt="Parthenon"/></a></div>
+      </div>
+      <div class="row" style="margin-top: 30px;">
+        <div class="three columns"><a href="#modal9"><img src="./images/photography/engagementPark1.jpg" class="image" alt="Engagement Park"/></a></div>
+        <div class="three columns"><a href="#modal10"><img src="./images/photography/harbor1.jpg" class="image" alt="Harbor"/></a></div>
+        <div class="three columns"><a href="#modal11"><img src="./images/photography/epcot1.jpg" class="image" alt="Epcot"/></a></div>
+        <div class="three columns"><a href="#modal12"><img src="./images/photography/beer1.jpg" class="image" alt="Coppertail"/></a></div>
+      </div>
+    </div>
+    <div id="modal1" class="modalDialog">
+      <div>
+        <a href="#close" title="Close" class="close"><img class="modalImg" src="./images/photography/vik.jpg"/></a>
+      </div>
+    </div>
+    <div id="modal2" class="modalDialog">
+      <div>
+        <a href="#close" title="Close" class="close"><img class="modalImg" src="./images/photography/engagmentFountain.jpg"/></a>
+      </div>
+    </div>
+    <div id="modal3" class="modalDialog">
+      <div>
+        <a href="#close" title="Close" class="close"><img class="modalImg" src="./images/photography/plane.jpg"/></a>
+      </div>
+    </div>
+    <div id="modal4" class="modalDialog">
+      <div>
+        <a href="#close" title="Close" class="close"><img class="modalImg" src="./images/photography/engagmentTampa.jpg"/></a>
+      </div>
+    </div>
+    <div id="modal5" class="modalDialog">
+      <div>
+        <a href="#close" title="Close" class="close"><img class="modalImg" src="./images/photography/newyork.jpg"/></a>
+      </div>
+    </div>
+    <div id="modal6" class="modalDialog">
+      <div>
+        <a href="#close" title="Close" class="close"><img class="modalImg" src="./images/photography/engagementBolts.jpg"/></a>
+      </div>
+    </div>
+    <div id="modal7" class="modalDialog">
+      <div>
+        <a href="#close" title="Close" class="close"><img class="modalImg" src="./images/photography/frontGate.JPG"/></a>
+      </div>
+    </div>
+    <div id="modal8" class="modalDialog">
+      <div>
+        <a href="#close" title="Close" class="close"><img class="modalImg" src="./images/photography/parthenon.jpg"/></a>
+      </div>
+    </div>
+    <div id="modal9" class="modalDialog">
+      <div>
+        <a href="#close" title="Close" class="close"><img class="modalImg" src="./images/photography/engagementPark.jpg"/></a>
+      </div>
+    </div>
+    <div id="modal10" class="modalDialog">
+      <div>
+        <a href="#close" title="Close" class="close"><img class="modalImg" src="./images/photography/harbor.JPG"/></a>
+      </div>
+    </div>
+    <div id="modal11" class="modalDialog">
+      <div>
+        <a href="#close" title="Close" class="close"><img class="modalImg" src="./images/photography/epcot.jpg"/></a>
+      </div>
+    </div>
+    <div id="modal12" class="modalDialog">
+      <div>
+        <a href="#close" title="Close" class="close"><img class="modalImg" src="./images/photography/beer.jpg"/></a>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Contact Section
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->  
+  
+  <section id="contact">
+    <div class="container">
+      <h1>Get In Touch</h1>
+        <div class="block"></div>
+        <br>
+        <br>
+        <br>
+         <div class="social">
+            <a href="mailto:jasongoesplaces@gmail.com" target="_blank">
+              <i class="far fa-envelope"></i>
+            </a>
             <a href="https://github.com/jasongoesplaces" target="_blank">
               <i class="fab fa-github"></i>
             </a>
-          </li>
-          <li>
             <a href="https://www.linkedin.com/in/jasongoesplaces/" target="_blank">
               <i class="fab fa-linkedin"></i>
             </a>
-          </li>
-          <li>
-            <a href="http://instagram.com/jasongoesplaces/" target="_blank">
+            <a href="https://www.instagram.com/jasongoesplaces/" target="_blank">
               <i class="fab fa-instagram"></i>
             </a>
-          </li>
-          <li>
-            <a href="https://www.youtube.com/channel/UChZcRZ6BQ3hrRgGTksQHzkA" target="_blank">
+            <a href="https://twitter.com/vmjgr" target="_blank">
               <i class="fab fa-youtube"></i>
             </a>
-          </li>
-        </ul>
-      </main>
+        </div>
+     
+      <!-- <form>
+        <div class="row">
+          <div class="six columns">
+            <label for="exampleRecipientInput">Name</label>
+            <input class="u-full-width" type="text">
+          </div>
+          <div class="six columns">
+            <label for="exampleEmailInput">Email</label>
+            <input class="u-full-width" type="email">
+          </div>
+        </div>
+        <div class="row">
+          <label for="exampleMessage">Message</label>
+          <textarea class="u-full-width"></textarea>
+          <input class="button-primary" type="submit" value="Submit">
+        </div>
+      </form>    -->
+        
     </div>
-    <noscript>
-      <style type="text/css">
-        .wallpaper {
-          animation-name: zoomOut;
-        }
+  </section>
+  
+  <!-- Footer Section
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->  
+  <footer>
+    <div class="container">
+      <div class="nine columns">
+        <p>&copy; Copyright 2018 JasonGoesPlaces</p>
+     
+      </div>
+      <div class="three columns"> <span class="typcn typcn-social-facebook-circular socialIcons"></span> <span class="typcn typcn-social-instagram-circular socialIcons"></span> <span class="typcn typcn-social-google-plus-circular socialIcons"></span> <span class="typcn typcn-social-linkedin-circular socialIcons"></span> </div>
+    </div>
+  </footer>
 
-        .picture {
-          animation-name: dropIn;
-        }
-      </style>
-    </noscript>
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.min.js"
-      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-      crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
-    <script defer type="text/javascript" src="js/main.js"></script>
-  </body>
+  
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script> -->
+  <script src="js/main.js"></script>
+</body>
 </html>
