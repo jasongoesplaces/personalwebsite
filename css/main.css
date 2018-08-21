@@ -39,6 +39,10 @@
     max-width: 20rem;
   }
 
+  .formSub {
+	  text-align: center
+  }
+
 /* Responsiveness on image */
 
 @media screen and (max-width: 799px) {

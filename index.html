@@ -268,46 +268,46 @@
   <section id="contact">
     <div class="container">
       <h1>Get In Touch</h1>
-        <div class="block"></div>
-        <br>
-        <br>
-        <br>
-         <div class="social">
-            <a href="mailto:jasongoesplaces@gmail.com" target="_blank">
-              <i class="far fa-envelope"></i>
-            </a>
-            <a href="https://github.com/jasongoesplaces" target="_blank">
-              <i class="fab fa-github"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/jasongoesplaces/" target="_blank">
-              <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="https://www.instagram.com/jasongoesplaces/" target="_blank">
-              <i class="fab fa-instagram"></i>
-            </a>
-            <a href="https://www.youtube.com/channel/UChZcRZ6BQ3hrRgGTksQHzkA" target="_blank">
-              <i class="fab fa-youtube"></i>
-            </a>
-        </div>
-     
-      <!-- <form>
-        <div class="row">
-          <div class="six columns">
-            <label for="exampleRecipientInput">Name</label>
-            <input class="u-full-width" type="text">
+      <div class="block"></div>
+      <div class="social">
+        <a href="https://github.com/jasongoesplaces" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/jasongoesplaces/" target="_blank">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://www.instagram.com/jasongoesplaces/" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.youtube.com/channel/UChZcRZ6BQ3hrRgGTksQHzkA" target="_blank">
+          <i class="fab fa-youtube"></i>
+        </a>
+      </div>
+      <br>
+      <br>
+      <br>
+      <form id="contactForm" class="gform" method="POST" action="https://script.google.com/macros/s/AKfycbzeRAQPo3s0DxnP-cMJ8xjVAZJd5ZT0G57bwWW-/exec">
+        <div class="formElements">
+          <div class="row">
+            <div class="six columns">
+              <label for="exampleRecipientInput">Name</label>
+              <input class="u-full-width" name="name" type="text">
+            </div>
+            <div class="six columns">
+              <label for="exampleEmailInput">Email</label>
+              <input name="email" class="u-full-width" type="email">
+            </div>
           </div>
-          <div class="six columns">
-            <label for="exampleEmailInput">Email</label>
-            <input class="u-full-width" type="email">
+          <div class="row">
+            <label for="exampleMessage">Message</label>
+            <textarea name="message" class="u-full-width"></textarea>
+            <input id="submitBtn" class="button-primary" type="submit" value="Submit">
           </div>
         </div>
-        <div class="row">
-          <label for="exampleMessage">Message</label>
-          <textarea class="u-full-width"></textarea>
-          <input class="button-primary" type="submit" value="Submit">
+        <div class="submitMessage formSub" style="display:none">
+          <h4>Thanks for reaching out! I'll be in touch with you soon!</h4>
         </div>
-      </form>    -->
-        
+      </form> 
     </div>
   </section>
   
@@ -326,6 +326,7 @@
   
   <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
   <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
+  <script data-cfasync="false" type="text/javascript" src="./js/form-submission-handler.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
