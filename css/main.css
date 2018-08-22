@@ -61,6 +61,19 @@
       margin-bottom: 3rem;
       width: 100%;
 	}
+
+	.portfolioImg {
+		width: 100%;
+		height: auto;
+	}
+
+	.one-third.column {
+		width: 100%;
+	}
+
+	.two-thirds.column {
+		width: 100%;
+	}
   }
   
   @media screen and (min-width: 800px) {
