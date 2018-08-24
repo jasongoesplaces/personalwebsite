@@ -736,44 +736,6 @@ opacity: 0;
 	margin-right: auto;
 	transition: .5s;
 }
-.image:hover {
-	opacity: 0.6;
-	transition: .3s;
-	cursor: pointer;
-}
-.modalImg {
-	height: 500px;
-}
-
-.modalDialog:target {
-	opacity:1;
-	pointer-events: auto;
-}
-
-.modalDialog > div {
-	width: 45%;
-	position: relative;
-	margin: 10% auto;
-	padding: 5px 20px 13px 20px;
-	border-radius: 10px;
-}
-
-.close {
-	color: #FFFFFF;
-	line-height: 25px;
-	position: relative;
-	right: -12px;
-	text-align: center;
-	top: -10px;
-	width: 24px;
-	text-decoration: none;
-	font-weight: bold;
-	-webkit-border-radius: 12px;
-	-moz-border-radius: 12px;
-	border-radius: 12px;
-}
-
-.close:hover { color: rgb(102, 119, 143); }
 
 @media only screen and (max-width: 500px) {
 	.modalDialog:target {
