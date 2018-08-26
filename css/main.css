@@ -680,16 +680,6 @@ opacity: 0;
 	height: 100%;
 }
 
-@media only screen and (max-width: 500px) {
-	.modalDialog:target {
-		opacity:0;
-	}
-	.image:hover {
-		opacity: 1;
-		cursor: none;
-	}
-
-}
 
 /* Contact Section
 ********************************************************************* */
@@ -872,3 +862,14 @@ pre, blockquote, dl, figure, table, p, ul, ol, form {
 .navLogo {
 	height: 30px;
 }
+@media only screen and (max-width: 500px) {
+	.logo2 {
+		height: 30%;
+		width: 30%;
+		padding-bottom: 1%;
+		display: block !important
+	}
+	
+
+}
+
