@@ -890,8 +890,8 @@ pre, blockquote, dl, figure, table, p, ul, ol, form {
 	overflow: hidden;
 	margin: 10px 1%;
 	min-width: 320px;
-	max-width: 480px;
-	max-height: 360px;
+	max-width: 900px;
+	max-height: 675px;
 	width: 48%;
 	height: auto;
 	background: #3085a3;
@@ -1018,4 +1018,9 @@ figure.effect-apollo:hover p, figure.effect-apollo:focus p, figure.effect-apollo
 	opacity: 1;
 	-webkit-transition-delay: 0.1s;
 	transition-delay: 0.1s;
+}
+
+.portLink {
+	color: rgb(235, 238, 241) !important;
+	font-size: 150%
 }
