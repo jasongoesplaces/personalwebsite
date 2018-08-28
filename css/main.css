@@ -8,6 +8,7 @@
 	max-width: 1000px;
 	list-style: none;
 	text-align: center;
+	z-index: 1;
 }
 
 /* Common style */
@@ -610,6 +611,7 @@ nav ul li {
 	margin-left: 35px;
 	line-height: 1.5;
 	letter-spacing: 1px;
+	z-index: 999;
 }
 
 @media only screen and (max-width: 766px) {
@@ -626,6 +628,7 @@ nav ul a {
 	text-transform: uppercase;
 	font-size: 12px;
 	text-decoration: none;
+	z-index: 999;
 }
 nav ul a:hover {
 	color: #CFCFCF;
