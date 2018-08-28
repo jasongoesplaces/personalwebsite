@@ -58,6 +58,11 @@ jQuery(document).ready(function($) {
 	        window.location.hash = target;
 	    });
     });
+    
+});
+
+$('.service').click(function(e) {
+    e.preventDefault();
 });
 
 
