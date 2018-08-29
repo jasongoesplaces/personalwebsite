@@ -61,5 +61,9 @@ jQuery(document).ready(function($) {
     
 });
 
+function portLink(url) {
+    var win = window.open(url, '_blank');
+    win.focus();
+}
 
 TweenMax.staggerFrom(".heading", 0.8, {opacity: 0, y: 20, delay: 0.2}, 0.4);
