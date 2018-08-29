@@ -949,6 +949,7 @@ figure.effect-apollo p {
 	text-shadow: 0.5px 0.5px 0.5px rgb(102, 119, 143);
 	-webkit-transition: opacity 0.35s;
 	transition: opacity 0.35s;
+	z-index: 2000;
 }
 
 figure.effect-apollo h2 {
