@@ -976,6 +976,7 @@ figure.effect-apollo:hover p, figure.effect-apollo:focus p, figure.effect-apollo
 	color: rgb(235, 238, 241) !important;
 	font-size: 100%;
 	margin-left: 7%;
+	z-index: 3;
 }
 
 .portLink:hover {
@@ -985,3 +986,6 @@ figure.effect-apollo:hover p, figure.effect-apollo:focus p, figure.effect-apollo
 .portTitle {
 	text-shadow: 0.5px 0.5px 0.5px rgb(102, 119, 143)
 }
+ .mobilePort {
+	 z-index: 2;
+ }
