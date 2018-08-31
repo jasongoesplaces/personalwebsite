@@ -689,7 +689,7 @@ input[type="submit"]:hover {
 	text-decoration: none;
 }
 @media only screen and (max-width: 500px) {
-	button {
+	input[type="submit"] {
 		-webkit-transition: all 300ms ease-in-out;
 		-moz-transition: all 300ms ease-in-out;
 		-o-transition: all 300ms ease-in-out;
@@ -712,7 +712,7 @@ input[type="submit"]:hover {
 		cursor: pointer;
 		box-sizing: border-box;
 	}
-	button:hover {
+	input[type="submit"]:hover {
 		-webkit-transition: all 300ms ease-in-out;
 		-moz-transition: all 300ms ease-in-out;
 		-o-transition: all 300ms ease-in-out;
@@ -737,6 +737,16 @@ footer p {
 .socialIcons {
 	font-size: 34px;
 	color: rgba(255, 255, 255, 0.7);
+}
+@media only screen and (max-width: 500px) {
+	.social {
+		padding: 0;
+		align-items: center
+	}
+	footer {
+		background-size: 125%;
+		background-position-y: top
+	}
 }
 /* Lists
 ********************************************************************* */
@@ -990,3 +1000,9 @@ figure.effect-apollo:hover p, figure.effect-apollo:focus p, figure.effect-apollo
  .mobilePort {
 	 z-index: 2;
  }
+
+@media only screen and (max-width: 500px) {
+	.portTitle {
+		text-shadow: 1px 1.5px 1.5px rgb(102, 119, 143)
+	}
+}
