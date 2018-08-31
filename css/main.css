@@ -657,7 +657,7 @@ input[type="email"], input[type="number"], input[type="search"], input[type="tex
 textarea {
 	min-height: 250px;
 }
-input[type="submit"] {
+.submitBtn {
 	-webkit-transition: all 300ms ease-in-out;
 	-moz-transition: all 300ms ease-in-out;
 	-o-transition: all 300ms ease-in-out;
@@ -680,7 +680,7 @@ input[type="submit"] {
 	cursor: pointer;
 	box-sizing: border-box;
 }
-input[type="submit"]:hover {
+.submitBtn:hover {
 	-webkit-transition: all 300ms ease-in-out;
 	-moz-transition: all 300ms ease-in-out;
 	-o-transition: all 300ms ease-in-out;
@@ -689,7 +689,7 @@ input[type="submit"]:hover {
 	text-decoration: none;
 }
 @media only screen and (max-width: 500px) {
-	#submitBtn {
+	.submitBtn {
 		-webkit-transition: all 300ms ease-in-out;
 		-moz-transition: all 300ms ease-in-out;
 		-o-transition: all 300ms ease-in-out;
@@ -712,7 +712,7 @@ input[type="submit"]:hover {
 		cursor: pointer;
 		box-sizing: border-box;
 	}
-	#submitBtn:hover {
+	.submitBtn:hover {
 		-webkit-transition: all 300ms ease-in-out;
 		-moz-transition: all 300ms ease-in-out;
 		-o-transition: all 300ms ease-in-out;
