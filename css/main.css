@@ -402,6 +402,8 @@ header {
 	background: none;
 	overflow: hidden;
 	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-o-transition: all 0.3s;
 	transition: all 0.3s;
 	opacity: 0;
 	top: -100px;
@@ -986,6 +988,10 @@ figure.effect-apollo:hover p, figure.effect-apollo:focus p, figure.effect-apollo
 
 .portLink {
 	color: rgb(235, 238, 241) !important;
+	-webkit-transition: all 300ms ease-in-out;
+	-moz-transition: all 300ms ease-in-out;
+	-o-transition: all 300ms ease-in-out;
+	transition: all 300ms ease-in-out;
 	font-size: 100%;
 	margin-left: 7%;
 	z-index: 2000;
@@ -993,6 +999,10 @@ figure.effect-apollo:hover p, figure.effect-apollo:focus p, figure.effect-apollo
 
 .portLink:hover {
 	color: rgb(190, 207, 225) !important;
+	-webkit-transition: all 300ms ease-in-out;
+	-moz-transition: all 300ms ease-in-out;
+	-o-transition: all 300ms ease-in-out;
+	transition: all 300ms ease-in-out;
 }
 
 .portTitle {
