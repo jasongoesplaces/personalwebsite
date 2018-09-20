@@ -738,7 +738,7 @@ footer p {
 	margin: 20px 0 0 0;
 }
 .socialIcons {
-	font-size: 34px;
+	font-size: 34px; 
 	color: rgba(255, 255, 255, 0.7);
 }
 @media only screen and (max-width: 500px) {
