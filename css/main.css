@@ -455,6 +455,10 @@ nav ul li {
 	z-index: 999;
 }
 
+nav ul li:nth-child(1) {
+	margin-left: 0 !important;
+}
+
 @media only screen and (max-width: 766px) {
 nav ul li {
 	width: 100%;
