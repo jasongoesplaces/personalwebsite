@@ -416,8 +416,10 @@ header {
 }
 }
 .open-nav {
-	max-height: 400px !important;
+	min-height: 100% !important;
+	font-size: 400%;
 }
+
 .sticky {
 	background-color: #ffffff;
 	opacity: 1;
@@ -486,10 +488,11 @@ nav ul a:hover {
 	right: 22px;
 	top: 0;
 	width: 30px;
+	margin-top: 0.5em;
 }
 
 .menu {
-	background-color: rgb(102, 119, 143) !important
+	background-color: #fff !important
 }
 
 @media only screen and (max-width: 766px) {
